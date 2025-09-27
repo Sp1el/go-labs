@@ -14,19 +14,6 @@ func (p Person) PrintInfo() {
 	fmt.Printf("Персона: %s, %d лет\n", p.name, p.age)
 }
 
-func addPerson(people *[]Person) {
-	var person Person
-
-	fmt.Print("Введите имя: ")
-	fmt.Scanln(&person.name)
-
-	fmt.Print("Введите возраст: ")
-	fmt.Scanln(&person.age)
-
-	*people = append(*people, person)
-	fmt.Println("Персона добавлена!")
-}
-
 func (p *Person) Birthday() {
 	p.age++
 	fmt.Printf("У %s день рождение! Теперь ему %d лет\n", p.name, p.age)

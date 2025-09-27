@@ -31,6 +31,7 @@ func interactiveMenu() {
 			fmt.Scanln(&discard)
 			continue
 		}
+
 		switch choice {
 		case 1:
 			clearScreen()
